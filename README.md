@@ -88,3 +88,22 @@ This project was designed to derive the following insights:
 
 ### 4.  calculate the average subscription duration for all customers. 
 
+![Screenshot 2024-11-06 204836](https://github.com/user-attachments/assets/2c54f06c-6341-449d-b3c8-03afac81dac0)
+
+### 5.  Find customers with subscriptions longer than 12 months.
+
+![Screenshot 2024-11-06 205035](https://github.com/user-attachments/assets/4273dde6-346e-4947-8491-82646fcee2d6)
+
+### 6.  Calculate total revenue by subscription type.
+
+![Screenshot 2024-11-06 205255](https://github.com/user-attachments/assets/5882092c-04ba-4dd0-9b86-8a6551de6da6)
+
+### 7.  Find the top 3 regions by subscription cancellations. 
+
+![Screenshot 2024-11-06 205725](https://github.com/user-attachments/assets/a154f6a5-f495-4592-812e-3025bb735bb9)
+
+### 8.  Find the total number of active and canceled subscriptions.
+
+![Screenshot 2024-11-06 205938](https://github.com/user-attachments/assets/4c3cb6d9-4c0b-4a15-834e-496f21bb5142)
+
+
