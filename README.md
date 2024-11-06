@@ -77,4 +77,14 @@ This project was designed to derive the following insights:
 
 ### 1.  Retrieve the total number of customers from each region. 
 
+![Screenshot 2024-11-06 171332](https://github.com/user-attachments/assets/be9ca7b4-f756-455b-be60-ef088963ee62)
+
+### 2.  Find the most popular subscription type by the number of customers.
+
+![Screenshot 2024-11-06 171529](https://github.com/user-attachments/assets/74d4501c-4490-4808-b561-c15480f73867)
+
+### 3.  Find customers who canceled their subscription within 6 months.
+![Screenshot 2024-11-06 171754](https://github.com/user-attachments/assets/5e44667e-5dc0-4e4c-968e-5f44263c0ac4)
+
+### 4.  calculate the average subscription duration for all customers. 
 
