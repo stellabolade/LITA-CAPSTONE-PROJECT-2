@@ -73,4 +73,8 @@ This project was designed to derive the following insights:
 
 ![Screenshot 2024-11-06 160401](https://github.com/user-attachments/assets/22446024-af78-445b-b40e-b71cb094bdf7)
 
+## Using SQL queries to extract key insights 
+
+### 1.  Retrieve the total number of customers from each region. 
+
 
