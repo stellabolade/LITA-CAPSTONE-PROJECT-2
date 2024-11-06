@@ -42,3 +42,35 @@ This project was designed to derive the following insights:
 **Data Visualization**: Utilizing Power BI, Different visualizations were created represent the key insights.
 
 ## ANALYSIS, VISUALIZATION, AND INFERENCE
+
+## Excel  Analysis
+### 1. Average subscription duration
+
+![Screenshot 2024-11-06 151528](https://github.com/user-attachments/assets/a9a142f6-7fc1-4052-8b14-50370225b0b1)
+![Screenshot 2024-11-06 161931](https://github.com/user-attachments/assets/0d8b7542-83ef-4d97-a907-13b2a44bc0e3)
+
+### 2. Most popular subscription types.
+
+![Screenshot 2024-11-06 155807](https://github.com/user-attachments/assets/12ffc6d1-5e80-4360-a52a-26ca32c13319)
+
+### 3. Cancellation rate per Subscription
+
+![Screenshot 2024-11-06 160845](https://github.com/user-attachments/assets/428e7b6f-f7e4-47c7-b5c0-771ca8dec772)
+
+### 4. Cancellation rate per Region
+
+![Screenshot 2024-11-06 161440](https://github.com/user-attachments/assets/9c1d65bc-603a-44f3-b376-0eb16a6d1274)
+
+### 5. Monthly subscription trend
+
+![Screenshot 2024-11-06 155105](https://github.com/user-attachments/assets/5529d1f8-5d65-463e-aae8-f9ab3cbb5784)
+
+### 6. Subscription Count by region
+
+![Screenshot 2024-11-06 155930](https://github.com/user-attachments/assets/ddccde8e-25f6-4d1a-8213-5d500ec0c9d3)
+
+### 7. Total revenue per region
+
+![Screenshot 2024-11-06 160401](https://github.com/user-attachments/assets/22446024-af78-445b-b40e-b71cb094bdf7)
+
+
