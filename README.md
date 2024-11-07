@@ -51,7 +51,8 @@ This project was designed to derive the following insights:
 
 ### 2. Most popular subscription types.
 
-![Screenshot 2024-11-06 155807](https://github.com/user-attachments/assets/12ffc6d1-5e80-4360-a52a-26ca32c13319)
+![Screenshot 2024-11-07 083223](https://github.com/user-attachments/assets/133e4642-4301-40ce-bd67-3124a6c4277a)
+
 
 ### 3. Cancellation rate per Subscription
 
@@ -76,34 +77,80 @@ This project was designed to derive the following insights:
 ## Using SQL queries to extract key insights 
 
 ### 1.  Retrieve the total number of customers from each region. 
+```
+SELECT Region, COUNT(CustomerID)
+AS Total_no_of_customers
+FROM dbo.customerdata
+GROUP BY Region
+```
 
 ![Screenshot 2024-11-06 171332](https://github.com/user-attachments/assets/be9ca7b4-f756-455b-be60-ef088963ee62)
 
 ### 2.  Find the most popular subscription type by the number of customers.
+```
+SELECT TOP 1 Subscriptiontype,COUNT(CustomerID)
+AS No_of_Customers
+FROM dbo.customerdata
+GROUP BY Subscriptiontype
+```
 
-![Screenshot 2024-11-06 171529](https://github.com/user-attachments/assets/74d4501c-4490-4808-b561-c15480f73867)
+![Screenshot 2024-11-07 082913](https://github.com/user-attachments/assets/623fb41b-5eb4-4159-8869-4b522ce4445e)
 
-### 3.  Find customers who canceled their subscription within 6 months.
-![Screenshot 2024-11-06 171754](https://github.com/user-attachments/assets/5e44667e-5dc0-4e4c-968e-5f44263c0ac4)
+### 3.  Find customers who canceled their subscription within 6 months. Al subscription were for 12 months and higher, so none
+```
+SELECT CustomerID, SubscriptionType, Region, 
+       DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) AS Subscription_Duration
+FROM customerdata
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
+  AND Canceled = 'TRUE';
+```
+
+![Screenshot 2024-11-07 083638](https://github.com/user-attachments/assets/c79de82f-23c7-4e59-ac38-4ada59bd25ef)
 
 ### 4.  calculate the average subscription duration for all customers. 
+```
+SELECT Count(CustomerID) 
+As All_Customers,AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEND))
+AS Average_Subscription_Duration
+FROM dbo.customerdata
+WHERE SubscriptionEnd IS NOT NULL
+```
 
 ![Screenshot 2024-11-06 204836](https://github.com/user-attachments/assets/2c54f06c-6341-449d-b3c8-03afac81dac0)
 
 ### 5.  Find customers with subscriptions longer than 12 months.
-
-![Screenshot 2024-11-06 205035](https://github.com/user-attachments/assets/4273dde6-346e-4947-8491-82646fcee2d6)
+```
+SELECT CustomerName,SubscriptionType,SubscriptionStart,SubscriptionEnd
+FROM dbo.customerdata
+WHERE DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd) >12
+```
+![Screenshot 2024-11-07 084515](https://github.com/user-attachments/assets/c740cd23-b078-4115-981d-a54f0f17913f)
 
 ### 6.  Calculate total revenue by subscription type.
-
+```
+SELECT SubscriptionType,SUM(Revenue) AS Total_Revenue
+FROM Customerdata
+GROUP BY SubscriptionType
+```
 ![Screenshot 2024-11-06 205255](https://github.com/user-attachments/assets/5882092c-04ba-4dd0-9b86-8a6551de6da6)
 
 ### 7.  Find the top 3 regions by subscription cancellations. 
-
-![Screenshot 2024-11-06 205725](https://github.com/user-attachments/assets/a154f6a5-f495-4592-812e-3025bb735bb9)
+```
+SELECT TOP 3 region, COUNT(CustomerID) AS Total_Cancellations
+FROM Customerdata
+WHERE Canceled = 'TRUE'
+GROUP BY Region
+ORDER BY Total_Cancellations DESC;
+```
+![Screenshot 2024-11-07 085006](https://github.com/user-attachments/assets/d3f7814e-34e0-4694-8fe9-f054ef750955)
 
 ### 8.  Find the total number of active and canceled subscriptions.
+```
+SELECT Canceled, COUNT(CustomerID) AS Total_Subscriptions
+FROM Customerdata
+GROUP BY Canceled;
+```
+![Screenshot 2024-11-07 085317](https://github.com/user-attachments/assets/a753cd31-0f67-4b7a-8b90-871156947404)
 
-![Screenshot 2024-11-06 205938](https://github.com/user-attachments/assets/4c3cb6d9-4c0b-4a15-834e-496f21bb5142)
 
 
