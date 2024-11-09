@@ -152,5 +152,39 @@ GROUP BY Canceled;
 ```
 ![Screenshot 2024-11-07 085317](https://github.com/user-attachments/assets/a753cd31-0f67-4b7a-8b90-871156947404)
 
+## Visualization with Power BI
+
+### Dashboard Overview
+
+![Screenshot 2024-11-09 070255](https://github.com/user-attachments/assets/08bef9de-1c8c-4cbf-ab36-94880ef39ff4)
+
+Revenue: The total revenue for the year is $68M
+
+Active Subscriptions: There are 18,612 active subscriptions.
+
+Inactive Subscriptions: There are 15,175 Cancelled subscriptions.
+
+### Visuals and inferences
+
+### Top generating subscription 
+
+![Screenshot 2024-11-09 070920](https://github.com/user-attachments/assets/064b0066-c3ca-4fa3-83f2-f444b4157480)
+
+Top-generating Subscription: The Basic subscription with a total revenue of $33.78M, is the top-performing plan which indicates it"s the most popular or widely accepted plan.
+
+Lower-generating Subcription: The Standard and Premium subscriptions with total revenue of $16.9M each; generate lower revenue compared to the Basic plan. This suggests that a smaller portion of revenue comes from these higher-tier subscriptions.
+
+### Revenue trends at the start of subscription
+
+![Screenshot 2024-11-09 075512](https://github.com/user-attachments/assets/f0287262-e6fe-4e50-bc09-ba1c7005cb9a)
+
+** Revenue Peaks **: Notable peaks occur around July 2022 ($3.45M) and January 2023 ($3.44M). This may indicate times when new subscriptions are more popular, possibly due to marketing campaigns, seasonal promotions, or natural demand increases at specific times of the year.
+
+Revenue Stability in 2023: After some fluctuation in 2022, revenue appears to stabilize more in 2023, with fewer dramatic drops. It stays within a tighter range, particularly from April to October 2023, where it hovers around $3.35M to $3.41M. This may suggest an increase in steady subscriber acquisition or retention.
+
+Slight Decline Mid-Year (2023): There is a slight dip around mid-2023 (July), with revenue dropping to approximately $3.35M, which quickly recovers to $3.40M by the end of the period. This drop and quick rebound may indicate temporary factors, like economic shifts or changes in consumer spending patterns.
+
+
+
 
 
